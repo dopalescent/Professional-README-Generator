@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Penn LPS Module 9 Challenge",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dopalescent/Professional-README-Generator.git"
+  },
+  "author": "Greg Skudlarek",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dopalescent/Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/dopalescent/Professional-README-Generator#readme",
   "dependencies": {
-    "inquirer": "8.2.4"
+    "inquirer": "9.2.9"
   }
 }
