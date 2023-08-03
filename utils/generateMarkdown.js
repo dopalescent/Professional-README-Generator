@@ -31,8 +31,6 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
   
-  ${data.licenseBadge}
-  
   ## Contributing
   ${data.contributing}
   
@@ -40,7 +38,7 @@ function generateMarkdown(data) {
   ${data.tests}
   
   ## License
-  This project is licensed under the ${data.license} License.
+  ${data.license}
   
   ## Questions
   GitHub: [${data.github}](https://github.com/${data.github})
