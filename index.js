@@ -16,6 +16,12 @@ const questions = [
     message: 'Enter project description:',
   },
   {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your application:',
+    choices: ['MIT', 'Apache', 'GPL', 'ISC', 'unlicensed'],
+  },
+  {
     type: 'input',
     name: 'installation',
     message: 'Enter installation instructions:',
@@ -24,12 +30,6 @@ const questions = [
     type: 'input',
     name: 'usage',
     message: 'Enter usage information:',
-  },
-  {
-    type: 'list',
-    name: 'license',
-    message: 'Choose a license for your application:',
-    choices: ['MIT', 'Apache', 'GPL', 'ISC', 'unlicensed'],
   },
   {
     type: 'input',
@@ -59,10 +59,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+  const readmeText = generateMarkdown(data);
+
+  fs.writeFile(fileName, readmeText, (error) => {
+    error ? console.error(error) : console.log(`File ${fileName} created.`);
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+  inquirer
+    .prompt(questions)
+    .then((answers) => {
+      writeToFile("README.md", answers);
+    })
+}
 
 // Function call to initialize app
 init();
