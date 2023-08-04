@@ -1,9 +1,9 @@
-# yih
+# New Title
 
-  ## Description
   ![License](https://img.shields.io/badge/License-GPL-blue)
 
-  yih
+  ## Description
+  
   
   ## Table of Contents
   - [Installation](#installation)
@@ -14,22 +14,24 @@
   - [Questions](#questions)
   
   ## Installation
-  yih
+  
   
   ## Usage
-  yih
+  
   
   ## Contributing
-  yih
+  
   
   ## Tests
-  yih
+  
   
   ## License
-  GPL
+  [![License](https://img.shields.io/badge/License-GPL-blue)](https://www.gnu.org/licenses/gpl-3.0)
+
+  This application is covered under the GPL License.
   
   ## Questions
-  yih
+  
   
  
   GitHub: [](https://github.com/)
