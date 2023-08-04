@@ -19,7 +19,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Choose a license for your application:',
-    choices: ['MIT', 'Apache', 'GPL', 'ISC', 'unlicensed'],
+    choices: ['MIT', 'Apache-2.0', 'GPL', 'ISC', 'unlicensed'],
   },
   {
     type: 'input',
